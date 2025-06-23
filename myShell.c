@@ -65,7 +65,7 @@ char* input_line(){
 }
 
 char **input_args(char *line){
-    char **args = malloc(4 * sizeof(char *));                                                   //to store tokens from user input, basically arguments
+    char **args = malloc(10 * sizeof(char *));                                                   //to store tokens from user input, basically arguments
     int argc = 0;                                                                               // track number of arguments passed by user
 
     char *token = strtok(line, " ");                                                            // store each work in the line input user inputted
